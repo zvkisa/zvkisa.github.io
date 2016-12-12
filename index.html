@@ -1,68 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Zukisa Masiza | Welcome </title>
-</head>
-<body>
+<html lang="en" class="no-js">
+    <head>
+        <title>Zukisa Masiza | Web Designer & Frontend Developer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="description" content="The website for visual designer and frontend developer, Zukisa Masiza">
+        <link href="assets/css/main.min.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="assets/img/favicons/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="assets/img/favicons/manifest.json">
+        <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body >
+        
+        <main class="layout">
+            <section class="layout_item">
+                <p>Hi, my name is <span class="hi">Zukisa Maiza<span class="highlight-green">&nbsp;&ast;</span></span>.</p>
+                <p>I am a <span class="rotate">web designer, front-end developer, human, mess without a cup of coffee</span>.</p>
+                <p>I mostly work on digital products, mobile applications and websites but occasionally like to dip my toes in the printer ink.</p>
+                <img src="assets/img/peace.svg" alt="peace sign" class="img-peace">
+                <a href="mailto:zukisamasiza@gmail.com" class="link-mail">zukisamasiza<img src="assets/img/right-arrow.svg" alt="right arrow" class="img-right-arrow">gmail.com</a>
+            </section>
+            <aside class="layout_pop-up">
+                <span>&ast; This is me.. *</span>
+                <img src="assets/img/zuks.jpg" alt="" class="img-tom">
+            </aside>
+        </main>
 
-  <div class="hero">
-    <h1 contentuneditable >🔥Coming SOON!🔥!</h1>
-  </div>
+        <!-- Include JS -->
+        <script type="text/javascript" src="assets/bower_components/jquery/dist/jquery.min.js.html"></script>
+        <script type="text/javascript" src="assets/js/app.min.js"></script>
 
-  <style>
-  html {
-    color:black;
-    font-family: sans-serif;
-    background: 
-      linear-gradient(45deg, hsla(340, 100%, 55%, 1) 0%, hsla(340, 100%, 55%, 0) 70%),
-      linear-gradient(135deg, hsla(225, 95%, 50%, 1) 10%, hsla(225, 95%, 50%, 0) 80%),
-      linear-gradient(225deg, hsla(140, 90%, 50%, 1) 10%, hsla(140, 90%, 50%, 0) 80%),
-      linear-gradient(315deg, hsla(35, 95%, 55%, 1) 100%, hsla(35, 95%, 55%, 0) 70%);
-  }
-
-  .hero {
-    min-height: 100vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color:black;
-  }
-
-
-  h1 {
-    text-shadow: 10px 10px 0 rgba(0,0,0,2);
-    font-size: 100px;
-  }
-  </style>
-
-<script>
-  const hero = document.querySelector('.hero');
-  const text = hero.querySelector('h1');
-  const walk = 500; // 100px
-
-  function shadow(e) {
-    const { offsetWidth: width, offsetHeight: height } = hero;
-    let { offsetX: x, offsetY: y } = e;
-
-    if (this !== e.target) {
-      x = x + e.target.offsetLeft;
-      y = y + e.target.offsetTop;
-    }
-
-    const xWalk = Math.round((x / width * walk) - (walk / 2));
-    const yWalk = Math.round((y / height * walk) - (walk / 2));
-
-    text.style.textShadow = `
-      ${xWalk}px ${yWalk}px 0 red,
-      ${xWalk * -1}px ${yWalk}px 0 blue,
-      ${yWalk}px ${xWalk * -1}px 0 green,
-      ${yWalk * -1}px ${xWalk}px 0 yellow
-    `;
-
-  }
-
-  hero.addEventListener('mousemove', shadow);
-</script>
-</body>
+    </body>
 </html>
