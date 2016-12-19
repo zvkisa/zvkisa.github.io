@@ -154,8 +154,7 @@ $(document).ready(function() {
         $.ajax({
             type: 'POST',
             url: $(form).attr('action'),
-            data: {message: "hello!"},
-            dataType: "json"
+            data: formData
         }).done(function(response) {
             $(formMessages).removeClass('error');
             $(formMessages).addClass('success');
