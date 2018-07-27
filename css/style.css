@@ -165,7 +165,7 @@ body {
     width: 875px;
     height: 504px;
     position: relative;
-    background: url("../images/snoop.gif") no-repeat;
+    
     z-index: 1;
     left: -5%;
     top: 125px;
