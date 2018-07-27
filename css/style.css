@@ -67,7 +67,7 @@ body {
 #page2 {
     background-color: #e6ce00;
     font-size: 62px;
-    height: 180vh;
+    height: 150vh;
 }
 
 #copy2 {
@@ -315,7 +315,7 @@ body {
     width: 562px;
     background-image: url("../images/candycane.png");
     margin-top: -4%;
-    left: 20vw;
+    left: 10vw;
 }
 
 .tunnel {
@@ -1063,7 +1063,7 @@ label.error {
     }
 
     .open-window {
-        background-image: url("../images/snoop.gif") no-repeat right bottom;
+/*         background-image: url("../images/snoop.gif") no-repeat right bottom; */
         left: -88%;
         top: 167px;
         -ms-transform: scale(0.6, 0.6);
