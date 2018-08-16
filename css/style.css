@@ -125,14 +125,14 @@ body {
     padding-bottom: 30px;
 }
 
-.slime-image {
-    background-image: url("../images/slime.png");
-    width: 705px;
-    height: 214px;
-    position: absolute;
-    z-index: 9999;
-    bottom: -212px;
-    left: 38%;
+style.css:128.slime-image {
+background-image: url("../images/slime.png");
+width: 705px;
+height: 214px;
+position: absolute;
+z-index: 9999;
+bottom: -213px;
+left: 35%;
 }
 
 .ice-cream {
