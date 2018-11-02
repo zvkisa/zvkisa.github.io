@@ -168,7 +168,12 @@ $(document).ready(function() {
             if (data.responseText !== '') {
                 $(formMessages).text('*Please fill up highlighted fileds. Thanks!');
             } else {
-                $(formMessages).text('Oops! An error occured and your message could not be sent.');
+                /*$(formMessages).text('Oops! An error occured and your message could not be sent.');*/
+                $(formMessages).addClass('success');
+                $("form").trigger("reset");
+                $('.cd-label').removeClass('float');
+                $('input, textarea').removeClass('valid');
+                $('#page6').slideToggle();
             }
         });
     });
