@@ -92,15 +92,16 @@
     function register() {
         var fname = document.getElementById('FirstName');
         var lname = document.getElementById('LastName');
+        var email = document.getElementById('Email');
         var age = document.getElementById('Age');
         var pass = document.getElementById('InputPassword');
         var conf_pass = document.getElementById('ConfPassword');
 
-        var array = [fname.value,lname.value,age.value,pass.value,conf_pass.value];
+        var array = [fname.value,lname.value,email.value,age.value,pass.value,conf_pass.value];
 
 
-        if ((array[3]) && (array[4])) {
-        if (array[3] == array[4]){
+        if ((array[4]) && (array[5])) {
+        if (array[4] == array[5]){
           window.alert("Passwords Matched!");
           document.getElementById("body-element").innerHTML = "["+ array + "]";
           //window.location.href="login.html";
